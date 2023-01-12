@@ -1,0 +1,157 @@
+/* css style players */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #E5E5E5;
+}
+
+main{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+}
+
+
+
+/* commmon part ========================= */
+
+
+.top-players{
+    
+    
+}
+.players-titel{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+.players{
+    
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-row-gap:30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 65px;
+    height: 65px;
+}
+.player-name{
+    font-size: 18px;
+    
+    margin-left: 16px;
+}
+/*====================== top blogs styles============================ */
+
+
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog{
+    display: flex;
+}
+.blog .thumbnaile img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-outhor{
+
+   color: #9F9F9F;
+   font-size: 16px;
+}
+.blog-outhor a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* course style ============================= */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.cours .cours-banner img{
+    width: 266px;
+height: 141px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-duretion{
+    background-color: #FFE4E8;
+    border-radius: 16px;
+}
+.fa-clock{
+    color: #FF4A60;
+}
+
+
+/*=================
+     media quarry
+======================== */
+
+/*========================================
+ mobile screen 
+ ============================= */
+
+
+ @media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+
+ }
+/* tablet dwvise================================== */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+
